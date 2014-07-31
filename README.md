@@ -11,6 +11,5 @@ instal grunt.js
 - open CMD, go to DIR
 - install the package: npm install
 - run grunt: grunt or grunt deploy
-- 
 
 Happy Coding!
