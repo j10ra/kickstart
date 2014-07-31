@@ -12,7 +12,6 @@ instal grunt.js
 - install the package: npm install
 - run grunt: grunt or grunt deploy
 
-
 - do all styles, scripts on build folder
 
 Happy Coding!
