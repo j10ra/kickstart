@@ -1,0 +1,19 @@
+{
+  "name": "kickstart",
+  "version": "0.0.0",
+  "description": "",
+  "main": "GruntFile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jetz Alipalo",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-cssmin": "^0.9.0",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-cli": "^0.1.13",
+    "grunt-sync": "0.0.7"
+  }
+}
