@@ -17,5 +17,7 @@ requirejs([
     'common/modernizr',
     'app/main'
 ], function () {
+
     website.core.run();
+
 });
