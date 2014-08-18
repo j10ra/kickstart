@@ -5,12 +5,17 @@
 requirejs.config({
     "baseUrl": "js/lib",
     "paths": {
+        'common': 'common/',
+        'plugins': 'plugins/',
         'app': '../app'
     }
 });
 
 // Load the main app module to start the app
 requirejs([
-    'modernizr',
-    "app/main"
-]);
+    'common/jquery',
+    'common/modernizr',
+    'app/main'
+], function () {
+    website.core.run();
+});
