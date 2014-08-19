@@ -1,6 +1,6 @@
-.idea/
 build/node_modules/
 !.gitignore
+.idea/
 
 # Windows
 Thumbs.db
