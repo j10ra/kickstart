@@ -1,7 +1,7 @@
 kickstart
 =========
 
-HTML starter template, grunt + require.js
+HTML starter template, grunt + sass + require.js
 
 instal node.js
 instal grunt.js
