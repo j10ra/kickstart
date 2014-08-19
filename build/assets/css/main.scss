@@ -46,7 +46,24 @@ table {
 /* Start Code */
 /**************************************/
 
+.note {
 
+  // By default, our note has a white background…
+  &__content {
+    background: white;
+  }
+
+  // But “featured” notes have an offwhite background
+  &--featured {
+    background: #000000;
+    &__content {
+      background: #eee;
+    }
+  }
+ .ie7 & {
+   line-height: 20px;
+ }
+}
 
 /**************************************/
 /* Helper Classes*/

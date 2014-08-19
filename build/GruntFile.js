@@ -6,21 +6,21 @@ module.exports = function (grunt) {
 
         pkg: grunt.file.readJSON('package.json'),
 
-        sass: {                                 // task
-            dist: {                             // target
-                files: {                        // dictionary of files
-                    '../css/main.css': 'assets/css/main.scss'     // 'destination': 'source'
+        sass: {
+            dist: {
+                files: {
+                    '../css/main.css': 'assets/css/main.scss' // 'destination': 'source'
                 },
                 options: {
                     outputStyle: 'compressed'
                 }
             },
-            dev: {                              // another target
-                options: {                      // dictionary of render options
+            dev: {
+                options: {
                     sourceMap: true
                 },
                 files: {
-                    '../css/main.css': 'assets/css/main.scss'
+                    '../css/main.css': 'assets/css/main.scss' // dictionary of render options
                 }
             }
         },
@@ -31,11 +31,12 @@ module.exports = function (grunt) {
                 mangle: false
             },
             dist: {
-                files: {
-                    '../js/app/main.js': [
-                        'assets/js/*.js'
-                    ]
-                }
+                files: [{
+                    expand: true,
+                    cwd: 'assets/js/',
+                    src: '*.js',
+                    dest: '../js/app/'
+                }]
             },
             dev: {
                 options: {
@@ -53,13 +54,16 @@ module.exports = function (grunt) {
         watch: {
             css: {
                 files: ['assets/css/*.scss'],
+                options: {
+                    livereload: true
+                },
                 tasks: ['sass:dev']
             },
 
             scripts: {
                 files: ['assets/js/*.js'],
                 options: {
-                    spawn: false,
+                    spawn: false
                 },
                 tasks: ['uglify:dev']
             }

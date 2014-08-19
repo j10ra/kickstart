@@ -30,6 +30,15 @@ table {
 /**************************************/
 /* Start Code */
 /**************************************/
+.note__content {
+  background: white; }
+.note--featured {
+  background: #000000; }
+  .note--featured__content {
+    background: #eee; }
+.ie7 .note {
+  line-height: 20px; }
+
 /**************************************/
 /* Helper Classes*/
 /**************************************/
