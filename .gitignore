@@ -1,9 +1,10 @@
 Thumbs.db
 build/node_modules/
 !.gitignore
+.idea/
 
 # Windows
 Thumbs.db
-ehthumbs.db
+thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
