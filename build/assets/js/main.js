@@ -7,7 +7,10 @@ website.core = (function () {
 
     fn.page = {
         init: function () {
-            console.log('app script: Loaded');
+            console.log('App script: Loaded');
+            if (window.jQuery) {
+                console.log('jquery: Loaded');
+            }
         }
     }
 
