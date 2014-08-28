@@ -1,23 +1,45 @@
 
 //Use strict
 //-------------------------------/
-var website = website || {}, fn = {};
+var nameApp = angular.module('nameApp',  []);
 
-website.core = (function () {
+nameApp.controller('NameCtrl', function ($scope) {
 
-    fn.page = {
-        init: function () {
-            console.log('App script: Loaded');
-            if (window.jQuery) {
-                console.log('jquery: Loaded');
+    $scope.enteredName = "";
+
+    $scope.addName = function() {
+        if ($scope.enteredName === "") {
+
+            alert('please enter name')
+
+        } else {
+
+            var addToArray = true;
+
+            for(var i = 0; i < $scope.names.length; i++) {
+                //console.log($scope.names[i].text)
+                if($scope.names[i] === $scope.enteredName) {
+                    addToArray = false;
+                    alert('Name exist')
+                }
             }
-        }
-    }
 
-    return {
-        run: function () {
-            fn.page.init();
-        }
-    }
+            if (addToArray) {
+                $scope.names.push($scope.enteredName);
+            }
+            $scope.enteredName = ""
 
-}());
+        }
+
+    };
+
+    $scope.names = ['Larry', 'Curly', 'Moe'];
+
+    $scope.removeName = function(name) {
+        var i = $scope.names.indexOf(name);
+        $scope.names.splice(i, 1);
+    };
+
+
+});
+
