@@ -5,6 +5,8 @@ var nameApp = angular.module('nameApp',  []);
 
 nameApp.controller('NameCtrl', function ($scope) {
 
+    $scope.names = ['Larry', 'Curly', 'Moe'];
+
     $scope.enteredName = "";
 
     $scope.addName = function() {
@@ -33,13 +35,11 @@ nameApp.controller('NameCtrl', function ($scope) {
 
     };
 
-    $scope.names = ['Larry', 'Curly', 'Moe'];
 
     $scope.removeName = function(name) {
         var i = $scope.names.indexOf(name);
         $scope.names.splice(i, 1);
     };
-
 
 });
 

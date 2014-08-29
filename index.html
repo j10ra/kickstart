@@ -24,7 +24,7 @@
 
     <ul>
         <li ng-repeat="name in names">
-            {{name}} <a href="#">remove</a>
+            {{name}} <a href="#" ng-click="removeName(name)">remove</a>
         </li>
     </ul>
     <form ng-submit="addName()">
