@@ -46,38 +46,21 @@ table {
 /* Start Code */
 /**************************************/
 
-.note {
 
-  // By default, our note has a white background…
-  &__content {
-    background: white;
-  }
-
-  // But “featured” notes have an offwhite background
-  &--featured {
-    background: #000000;
-    &__content {
-      background: #eee;
-    }
-  }
- .ie7 & {
-   line-height: 20px;
- }
-}
 
 /**************************************/
 /* Helper Classes*/
 /**************************************/
-.clearfix:after {
+.clearfix {
+  display: block;
+
+  &:after {
     clear: both;
     content: ".";
     display: block;
     height: 0;
+    font-size: 0;
     visibility: hidden;
-}
-.clearfix {
-    display: inline-block;
-}
-.clearfix {
-    display: block;
+
+  }
 }
