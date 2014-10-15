@@ -12,16 +12,16 @@ Simple HTML starter template
 ##Style Partials
 - _kickstart-normalize.scss
 
-Tool Dependencies
+##Tool Dependencies
 - node
 - grunt
 - Ruby
 
 ##Setting up - Windows (running via IIS)
-- open CMD, go to DIRECTORY
-- install the package: npm install
-- run grunt: grunt or grunt deploy
-- do all styles, scripts on build folder
+- Open CMD, go to DIRECTORY
+- Install the package: npm install
+- Run grunt: grunt or grunt deploy
+- Do all styles, scripts on build folder
 
 Note: Added temporary web.config to access json file if any
 
