@@ -1,16 +1,28 @@
 kickstart
 =========
 
-HTML starter template, grunt + sass + require.js
+Simple HTML starter template
 
-instal node.js
-instal grunt.js
+##Common scripts
+- jquery-1-11-1.js
+- modernizr.js
+- respond.js (below IE9 only)
+- html5-shiv.js (below IE9 only)
 
-#windows
-- clone repository
-- open CMD, go to DIR
+##Style Partials
+- _kickstart-normalize.scss
+
+Tool Dependencies
+- node
+- grunt
+- Ruby
+
+##Setting up - Windows (running via IIS)
+- open CMD, go to DIRECTORY
 - install the package: npm install
 - run grunt: grunt or grunt deploy
 - do all styles, scripts on build folder
+
+Note: Added temporary web.config to access json file if any
 
 Happy Coding!

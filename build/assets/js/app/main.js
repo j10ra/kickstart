@@ -1,11 +1,11 @@
 //Use strict
 //-------------------------------/
 
-var website = website || {}, fn = {};
+var website = website || {};
 
 website.core = (function () {
 
-    fn.page = {
+    var page = {
         init: function () {
             console.log('app script: Loaded');
         }
@@ -13,11 +13,12 @@ website.core = (function () {
 
     return {
         run: function () {
-            fn.page.init();
+            page.init();
         }
     };
 
 }());
 
-$(document).ready(function() {website.core.run();
+$(document).ready(function() {
+    website.core.run();
 });
